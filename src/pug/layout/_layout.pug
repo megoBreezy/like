@@ -1,0 +1,23 @@
+doctype html
+html(lang="ru")
+	block head
+		head
+			meta(charset="utf-8")
+			title Title your site
+			meta(content="width=device-width, initial-scale=1" name="viewport")
+			meta(content="ie=edge" http-equiv="x-ua-compatible")
+			link(rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon") 
+			link(rel="stylesheet" href="css/swiper-bundle.min.css")
+			link(rel="stylesheet" href="css/aos.css")
+			link(rel="stylesheet" href="css/main.css")
+	body
+		#overlay
+		main#main
+			.content
+				block content
+			block footer
+		script(src='js/swiper-bundle.min.js')
+		script(src='js/countUp.js')
+		script(src='js/aos.js')
+		script(src='js/app.js')
+		block scripts

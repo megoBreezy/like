@@ -1,0 +1,41 @@
+.main-container
+    .welcome-container
+        .welcome-slider
+            .swiper-wrapper
+                .swiper-slide 
+                    .welcome__left 
+                        h2(data-aos="fade-up").welcome__title 
+                            span.text-blue Разрабатываем 
+                            span.text-red надёжные 
+                            |решения для бизнеса
+                            .welcome__title-icon 
+                                img(src="img/label-number.svg", alt="")
+                        div(data-aos="fade-up" data-aos-delay="300").welcome__text Эффективные в долгосрочной перспективе, и доводим их до идеала
+                        div(data-aos="fade-up" data-aos-delay="600")
+                            a(href="#").btn.btn-primary Оставить заявку
+                                svg.icon.icon--arrow-right
+                                    use(href="img/sprite.svg#arrow-right")
+                    div(data-aos="fade-left" data-aos-delay="300").welcome__img 
+                        img(src="img/welcome-1.png", alt="")
+                .swiper-slide
+                    .welcome__left 
+                        h2.welcome__title 
+                            span.text-blue Нам пох*р что 
+                            span.text-red интегрировать, 
+                            |главное что бы было API
+                        .welcome__text Все задачи IT-аутсорсинга от малого до крупного бизнеса
+                        a(href="#").btn.btn-primary Наши услуги
+                            svg.icon.icon--arrow-right
+                                use(href="img/sprite.svg#arrow-right")
+                    .welcome__img 
+                        img(src="img/welcome-2.png", alt="")
+        ul(data-aos="fade-right" data-aos-anchor-placement="top-bottom").welcome-menu
+            li.welcome-menu__item 
+                a(href="#").welcome-menu__link Разработка
+            li.welcome-menu__item 
+                a(href="#").welcome-menu__link IOS / Android
+            li.welcome-menu__item 
+                a(href="#").welcome-menu__link Дизайн
+            li.welcome-menu__item 
+                a(href="#").welcome-menu__link Маркетинг
+
