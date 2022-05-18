@@ -50,8 +50,8 @@
                             <li class="nav__item"><a class="nav__link" href="about-company.html"> О компании</a></li>
                             <li class="nav__item"> <a class="nav__link" href="services.html">Наши услуги</a></li>
                             <li class="nav__item"> <a class="nav__link is-active" href="cases.html">Кейсы</a></li>
-                            <li class="nav__item"> <a class="nav__link" href="#">Блог</a></li>
-                            <li class="nav__item"> <a class="nav__link" href="#">Контакты</a></li>
+                            <li class="nav__item"> <a class="nav__link" href="blog.html">Блог</a></li>
+                            <li class="nav__item"> <a class="nav__link" href="contacts.html">Контакты</a></li>
                         </ul>
                         <div class="header__right"><a class="header__phone" href="tel:+375293220020">+375 (29) 322-00-20
                             </a><a class="menu-btn" href="#">
@@ -76,8 +76,8 @@
                             </li>
                             <li class="nav__item"> <a class="nav__link" href="reviews.html">Отзывы</a></li>
                             <li class="nav__item"> <a class="nav__link" href="#">Вакансии</a></li>
-                            <li class="nav__item"> <a class="nav__link" href="#">Блог</a></li>
-                            <li class="nav__item"> <a class="nav__link" href="#">Контакты</a></li>
+                            <li class="nav__item"> <a class="nav__link" href="blog.html">Блог</a></li>
+                            <li class="nav__item"> <a class="nav__link" href="contacts.html">Контакты</a></li>
                         </ul>
                         <div class="contacts menu__contacts"> <a class="contacts__phone" href="tel:+375293220020">+375
                                 (29) 322-00-20</a><a class="contacts__mail" href="mailto:">info@likeit.by</a>
@@ -173,20 +173,28 @@
                     </div>
                 </div>
 
-
-                <ul id="category" class="menu_cases" data-aos="fade-right">
-                    <li class="nav__link" data-filter="*"><b>Все проекты</b></li>
-                    <li class="nav__link" data-filter='shop'><b>Интернет-магазин </b></li>
-                    <li class="nav__link" data-filter="corp"><b>Корпоративный сайт</b></li>
-                    <li class="nav__link" data-filter="exc"><b>Эксклюзив </b></li>
-                    <li class="nav__link" data-filter="mar"><b>Интернет-маркетинг</b></li>
-                    <li class="nav__link" data-filter="crm"><b>Внедрение CRM</b></li>
-                    <li class="nav__link" data-filter="des"><b>Дизайн</b></li>
-                </ul>
+                <div class="menu-cases-wrap" data-aos="fade-right">
+                    <div class="menu-cases__holder">
+                        <div class="menu-cases__holder-text">
+                            Все проекты
+                        </div>    
+                        
+                        <svg class="icon icon--angle-down">
+                            <use href="img/sprite.svg#angle-down"></use>
+                        </svg>
+                    </div>
+                    <ul id="category" class="menu_cases">
+                        <li class="nav__link is-active" data-filter="*">Все проекты</li>
+                        <li class="nav__link" data-filter='shop'>Интернет-магазин</li>
+                        <li class="nav__link" data-filter="corp">Корпоративный сайт</li>
+                        <li class="nav__link" data-filter="exc">Эксклюзив</li>
+                        <li class="nav__link" data-filter="mar">Интернет-маркетинг</li>
+                        <li class="nav__link" data-filter="crm">Внедрение CRM</li>
+                        <li class="nav__link" data-filter="des">Дизайн</li>
+                    </ul>
+                </div>
 
                 <div class="row">
-
-
                     <div class="column_cases elem exc">
                         <div class="element-cases-animation">
                             <div class="swiper-slide case-slider__item"> <a class="case" href="hankook.html">
@@ -447,6 +455,37 @@
                 </div>
             </div>
         </div>
+        <script type="text/javascript">
+            let menuCases = document.querySelector('.menu_cases')
+            let casesBtns = menuCases.querySelectorAll('.nav__link')
+            let casesSelect = document.querySelector('.menu-cases__holder')
+            let casesSelectText = document.querySelector('.menu-cases__holder-text')
+
+            for (const casesBtn of casesBtns) {
+                casesBtn.addEventListener('click', function(){
+                    for (const casesBtn of casesBtns) {
+                        casesBtn.classList.remove('is-active');
+                    }
+                    this.classList.add('is-active');
+
+                    menuCases.style.maxHeight = null;
+                    casesSelect.classList.remove('is-active')
+
+                    var text = this.textContent;
+                    casesSelectText.textContent = text;
+                });
+            }
+
+            casesSelect.addEventListener('click', function(){
+                if (menuCases.style.maxHeight){
+                    menuCases.style.maxHeight = null;
+                    this.classList.remove('is-active');
+                } else {
+                    menuCases.style.maxHeight =  menuCases.scrollHeight + "px";
+                    this.classList.add('is-active');
+                }
+            });
+        </script>
         <script>
             function onEntry(entry) {
                 entry.forEach(change => {
@@ -541,6 +580,7 @@
             </div>
         </footer>
     </main>
+
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/countUp.js"></script>
     <script src="js/aos.js"></script>
