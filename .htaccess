@@ -1,5 +1,5 @@
 Options -Indexes
-ErrorDocument 404 /404.php
+ErrorDocument 404 https://new.likeit.pro/404-error.html
 
 <IfModule mod_php5.c>
   php_flag session.use_trans_sid off

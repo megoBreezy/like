@@ -6,8 +6,8 @@
     <title>Как заставить социальные сети работать на вашу компанию. Подробный гайд | Блог LikeIT</title>
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="ie=edge" http-equiv="x-ua-compatible">
-    <meta name="description" content="Отзывы о компании Лайкит: что говорят о нас наши клиенты" />
-    <meta name="keywords" content="отзывы" />
+    <meta name="description" content="Подробный гайд как заставить социальные сети работать на вашу компанию. Основные задачи и инструменты качественного SMM, как правильно делать анализ своей аудитории и сегментировать её." />
+    <meta name="keywords" content="smm, социальные сети, блог" />
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
@@ -16,6 +16,14 @@
 </head>
 
 <body>
+  <div class="cookie_notice" id="privat">
+    <div class="qqq"><div class="qqq1">Мы используем файлы cookie для улучшения работы сайта. Подробную
+      информацию вы найдете в <a class="qqq3" target="_blank" href="consent.html">Политике ООО "Лайкит" обработки
+        персональных данных</a>.</div>
+        <div class="qqq2"> <a class="cookie_btn" id="cookie_close" href="#close">Согласиться</a> <span class="close" id="close-form-btn"></span></div>
+     
+    </div>
+  </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <div id="overlay"></div>
     <main id="main">
@@ -56,7 +64,7 @@
                             <li class="nav__item nav__item--mobile"> <a class="nav__link" href="cases.html">Кейсы</a>
                             </li>
                             <li class="nav__item"> <a class="nav__link" href="reviews.html">Отзывы</a></li>
-                            <li class="nav__item"> <a class="nav__link" href="#">Вакансии</a></li>
+                            <li class="nav__item"> <a class="nav__link" href="job-openings.html">Вакансии</a></li>
                             <li class="nav__item"> <a class="nav__link" href="blog.html">Блог</a></li>
                             <li class="nav__item"> <a class="nav__link" href="contacts.html">Контакты</a></li>
                         </ul>
@@ -96,7 +104,7 @@
                                 <ul class="menu-list">
                                     <li class="menu-list__item"> <a class="menu-list__link" href="cases.html">Кейсы</a>
                                     </li>
-                                    <li class="menu-list__item"> <a class="menu-list__link" href="#">UX/UI дизайн</a>
+                                    <li class="menu-list__item"> <a class="menu-list__link" href="cases.html#des">UX/UI дизайн</a>
                                     </li>
                                     <li class="menu-list__item"> <a class="menu-list__link"
                                             href="landing-page.html">Landing pages</a>
@@ -113,8 +121,8 @@
                             </div>
                             <div class="menu__col">
                                 <ul class="menu-list">
-                                    <li class="menu-list__item"> <a class="menu-list__link" href="#">Продукты</a></li>
-                                    <li class="menu-list__item"> <a class="menu-list__link" href="#">1С-Битрикс:
+                                    <li class="menu-list__item"> <div class="menu-list__link" href="#">Продукты</div></li>
+                                    <li class="menu-list__item"> <a class="menu-list__link" href="buy-a-license.html">1С-Битрикс:
                                             Управление сайтом</a></li>
                                 </ul>
                             </div>
@@ -147,11 +155,71 @@
                 <div class="badge__icon"> <img src="img/top-10.svg" alt=""></div>
                 <div class="badge__body">
                     Топ-10 по версии <a class="badge__link" href="#">ratingbynet.by</a></div>
-            </div> <a class="feedback" href="#">
+            </div> <a class="feedback modal-btn" href="propouse">
                 <svg class="icon icon--feedback">
                     <use href="img/sprite.svg#feedback"></use>
                 </svg></a>
-            <div class="page-social">
+            <div class="modal" id="propouse">
+    <div class="modal__inner">
+      <div class="modal__body">
+        <div class="main-container">
+          <div class="modal__head">
+            <span> </span><span> </span><span></span>
+            <a class="cross-btn modal-close" href="#">
+              <div class="menu-btn__text">Закрыть</div>
+              <div class="menu-btn__icon"> <span> </span><span> </span><span></span></div>
+            </a>
+          </div>
+        </div>
+        <div class="main-container-sm">
+          <h3 class="title-lg">Оставить заявку</h3>
+          <p class="sub-title-lg">Заполнити форму обратной связи и мы вышлем вам коммерческое предложение</p>
+          <div class="letter">
+            <div class="letter__text">Привет, меня зовут</div>
+            <div class="letter__form">
+              <input class="letter__form-input" type="text" placeholder="имя и фамилия">
+            </div>
+            <div class="letter__text">. Я из компании</div>
+            <div class="letter__form">
+              <input class="letter__form-input" type="text" placeholder="название компании">
+            </div>
+            <div class="letter__text">Вы можете связаться со мной по телефону</div>
+            <div class="letter__form">
+              <input class="letter__form-input" type="text" placeholder="ххх ххх хх хх">
+            </div>
+            <div class="letter__text">, или по электронной почте</div>
+            <div class="letter__form">
+              <input class=" letter__form-input" type="text" placeholder="your@email.ru">
+            </div>
+            <div class="letter__text">. Меня интересует </div>
+            <div class="letter__form-textarea-cont">
+              <textarea class="letter__form-textarea" cols="30" rows="1"
+                placeholder=" краткое описание проекта"></textarea>
+            </div>
+          </div>
+          <div class="file">
+            <input class="file__input" type="file" id="file-1">
+            <label class="file__label" for="file-1">Прикрепить файл с информацией о проекте
+              <svg class="icon icon--clip">
+                <use href="img/sprite.svg#clip"></use>
+              </svg>
+            </label>
+          </div>
+          <div class="letter-bottom"> <a class="btn btn-primary" href="#">Отправить
+              <svg class="icon icon--arrow-right">
+                <use href="img/sprite.svg#arrow-right"></use>
+              </svg></a>
+            <div class="checkbox">
+              <!--.is-error-->
+              <input class="checkbox__input" type="checkbox" id="checkbox-1">
+              <label class="checkbox__label" for="checkbox-1">Согласие на обработку персональных данных</label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="page-social">
                 <ul class="social" data-aos="fade-right">
                     <li class="social__item"> <a class="social__link" href="https://t.me/likeitpro">Telegram</a></li>
                     <li class="social__item"> <a class="social__link"
@@ -1765,7 +1833,7 @@
                     </div>
                     <div class="letter__text">, или по электронной почте</div>
                     <div class="letter__form">
-                        <input class="letter__form-input is-error" type="text" placeholder="your@email.ru">
+                        <input class="letter__form-input " type="text" placeholder="your@email.ru">
                     </div>
                     <div class="letter__text">. Меня интересует </div>
                     <div class="letter__form-textarea-cont">
@@ -1819,12 +1887,12 @@
                         <ul class="footer-nav">
                             <li class="footer-nav__item"><a class="footer-nav__link" href="about-company.html">О
                                     компании </a></li>
-                            <li class="footer-nav__item"><a class="footer-nav__link" href="#">Блог </a></li>
-                            <li class="footer-nav__item"><a class="footer-nav__link" href="#">Партнеры</a></li>
+                            <li class="footer-nav__item"><a class="footer-nav__link" href="blog.html">Блог </a></li>
+                             
                             <li class="footer-nav__item"><a class="footer-nav__link" href="cases.html">Кейсы</a></li>
                             <li class="footer-nav__item"><a class="footer-nav__link" href="reviews.html">Отзывы</a></li>
                             <li class="footer-nav__item"><a class="footer-nav__link"
-                                    href="img/documents/LLC-Laikit.docx">Реквизиты </a>(<a
+                                    href="img/documents/LLC-Laikit.docx">Реквизиты </a> (<a
                                     class="footer-nav__link-download" href="img/documents/LLC-Laikit.docx">Скачать</a>)
                             </li>
                         </ul>
@@ -1846,7 +1914,7 @@
                         <h3 class="footer__contacts-title">Наши контакты</h3>
                         <div class="contacts footer__contacts"><a class="contacts__phone" href="tel:+375293220020">+375
                                 (29) 322-00-20</a><a class="contacts__mail" href="mailto:">info@likeit.by</a>
-                            <div class="contacts__address"> <span>Минск, ул. Казинца 11а </span><span>Барановичи, </br>
+                            <div class="contacts__address"> <span>Минск, ул. Казинца 11а <br>Барановичи, </br>
                                     ул. Куйбышева,111 офис 211</span></div>
                         </div>
                     </div>

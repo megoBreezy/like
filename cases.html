@@ -35,6 +35,14 @@
 </head>
 
 <body>
+  <div class="cookie_notice" id="privat">
+    <div class="qqq"><div class="qqq1">Мы используем файлы cookie для улучшения работы сайта. Подробную
+      информацию вы найдете в <a class="qqq3" target="_blank" href="consent.html">Политике ООО "Лайкит" обработки
+        персональных данных</a>.</div>
+        <div class="qqq2"> <a class="cookie_btn" id="cookie_close" href="#close">Согласиться</a> <span class="close" id="close-form-btn"></span></div>
+     
+    </div>
+  </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <div id="overlay"></div>
     <main id="main">
@@ -75,7 +83,7 @@
                             <li class="nav__item nav__item--mobile"> <a class="nav__link" href="cases.html">Кейсы</a>
                             </li>
                             <li class="nav__item"> <a class="nav__link" href="reviews.html">Отзывы</a></li>
-                            <li class="nav__item"> <a class="nav__link" href="#">Вакансии</a></li>
+                            <li class="nav__item"> <a class="nav__link" href="job-openings.html">Вакансии</a></li>
                             <li class="nav__item"> <a class="nav__link" href="blog.html">Блог</a></li>
                             <li class="nav__item"> <a class="nav__link" href="contacts.html">Контакты</a></li>
                         </ul>
@@ -115,7 +123,8 @@
                                 <ul class="menu-list">
                                     <li class="menu-list__item"> <a class="menu-list__link" href="cases.html">Кейсы</a>
                                     </li>
-                                    <li class="menu-list__item"> <a class="menu-list__link" href="#">UX/UI дизайн</a>
+                                    <li class="menu-list__item"> <a class="menu-list__link" href="cases.html#des">UX/UI
+                                            дизайн</a>
                                     </li>
                                     <li class="menu-list__item"> <a class="menu-list__link"
                                             href="landing-page.html">Landing pages</a></li>
@@ -130,8 +139,11 @@
                             </div>
                             <div class="menu__col">
                                 <ul class="menu-list">
-                                    <li class="menu-list__item"> <a class="menu-list__link" href="#">Продукты</a></li>
-                                    <li class="menu-list__item"> <a class="menu-list__link" href="#">1С-Битрикс:
+                                    <li class="menu-list__item">
+                                        <div class="menu-list__link" href="#">Продукты</div>
+                                    </li>
+                                    <li class="menu-list__item"> <a class="menu-list__link"
+                                            href="buy-a-license.html">1С-Битрикс:
                                             Управление сайтом</a></li>
                                 </ul>
                             </div>
@@ -149,12 +161,72 @@
             </div>
 
 
-            <a class="feedback" href="#">
+            <a class="feedback modal-btn" href="propouse">
                 <svg class="icon icon--feedback">
                     <use href="img/sprite.svg#feedback"></use>
                 </svg></a>
 
-            <div class="page-social">
+            <div class="modal" id="propouse">
+    <div class="modal__inner">
+      <div class="modal__body">
+        <div class="main-container">
+          <div class="modal__head">
+            <span> </span><span> </span><span></span>
+            <a class="cross-btn modal-close" href="#">
+              <div class="menu-btn__text">Закрыть</div>
+              <div class="menu-btn__icon"> <span> </span><span> </span><span></span></div>
+            </a>
+          </div>
+        </div>
+        <div class="main-container-sm">
+          <h3 class="title-lg">Оставить заявку</h3>
+          <p class="sub-title-lg">Заполнити форму обратной связи и мы вышлем вам коммерческое предложение</p>
+          <div class="letter">
+            <div class="letter__text">Привет, меня зовут</div>
+            <div class="letter__form">
+              <input class="letter__form-input" type="text" placeholder="имя и фамилия">
+            </div>
+            <div class="letter__text">. Я из компании</div>
+            <div class="letter__form">
+              <input class="letter__form-input" type="text" placeholder="название компании">
+            </div>
+            <div class="letter__text">Вы можете связаться со мной по телефону</div>
+            <div class="letter__form">
+              <input class="letter__form-input" type="text" placeholder="ххх ххх хх хх">
+            </div>
+            <div class="letter__text">, или по электронной почте</div>
+            <div class="letter__form">
+              <input class=" letter__form-input" type="text" placeholder="your@email.ru">
+            </div>
+            <div class="letter__text">. Меня интересует </div>
+            <div class="letter__form-textarea-cont">
+              <textarea class="letter__form-textarea" cols="30" rows="1"
+                placeholder=" краткое описание проекта"></textarea>
+            </div>
+          </div>
+          <div class="file">
+            <input class="file__input" type="file" id="file-1">
+            <label class="file__label" for="file-1">Прикрепить файл с информацией о проекте
+              <svg class="icon icon--clip">
+                <use href="img/sprite.svg#clip"></use>
+              </svg>
+            </label>
+          </div>
+          <div class="letter-bottom"> <a class="btn btn-primary" href="#">Отправить
+              <svg class="icon icon--arrow-right">
+                <use href="img/sprite.svg#arrow-right"></use>
+              </svg></a>
+            <div class="checkbox">
+              <!--.is-error-->
+              <input class="checkbox__input" type="checkbox" id="checkbox-1">
+              <label class="checkbox__label" for="checkbox-1">Согласие на обработку персональных данных</label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="page-social">
                 <ul class="social" data-aos="fade-right">
                     <li class="social__item"> <a class="social__link" href="https://t.me/likeitpro">Telegram</a></li>
                     <li class="social__item"> <a class="social__link"
@@ -164,6 +236,11 @@
                 </ul>
             </div><a class="page-copy-right" href="#">© 2013-2019 LIKEIT / web-engineering co</a>
             <div class="main-container-sm">
+                <ul class="breadcrumbs mb-15">
+                    <li class="breadcrumbs__item"> <a class="breadcrumbs__link" href="https://new.likeit.pro/">Главная
+                        </a></li>
+                    <li class="breadcrumbs__item">Кейсы</li>
+                </ul>
                 <div class="block-header">
                     <div class="block-header__left">
                         <h3 class="block-title" data-aos="fade-left">Наши кейсы</h3>
@@ -177,20 +254,20 @@
                     <div class="menu-cases__holder">
                         <div class="menu-cases__holder-text">
                             Все проекты
-                        </div>    
-                        
+                        </div>
+
                         <svg class="icon icon--angle-down">
                             <use href="img/sprite.svg#angle-down"></use>
                         </svg>
                     </div>
                     <ul id="category" class="menu_cases">
-                        <li class="nav__link is-active" data-filter="*">Все проекты</li>
-                        <li class="nav__link" data-filter='shop'>Интернет-магазин</li>
-                        <li class="nav__link" data-filter="corp">Корпоративный сайт</li>
-                        <li class="nav__link" data-filter="exc">Эксклюзив</li>
-                        <li class="nav__link" data-filter="mar">Интернет-маркетинг</li>
-                        <li class="nav__link" data-filter="crm">Внедрение CRM</li>
-                        <li class="nav__link" data-filter="des">Дизайн</li>
+                        <li class="nav__link is-active" data-filter="*" id="all">Все проекты</li>
+                        <li class="nav__link" data-filter='shop' id="shop">Интернет-магазин</li>
+                        <li class="nav__link" data-filter="corp" id="corp">Корпоративный сайт</li>
+                        <li class="nav__link" data-filter="exc" id="exc">Эксклюзив</li>
+                        <li class="nav__link" data-filter="mar" id="mar">Интернет-маркетинг</li>
+                        <li class="nav__link" data-filter="crm" id="crm">Внедрение CRM</li>
+                        <li class="nav__link" data-filter="des" id="des">Дизайн</li>
                     </ul>
                 </div>
 
@@ -209,7 +286,8 @@
                             <div class="swiper-slide case-slider__item"> <a class="case" href="petztrove.html">
                                     <div class="case__img"> <img src="img/case/case-20.webp" alt=""></div>
                                     <div class="case__name">Мобильное приложение PetzTrove</div>
-                                    <div class="case__about">Сервис с заботой о домашних животных с монетизацией.</div>
+                                    <div class="case__about">Монетизированный сервис с заботой о домашних животных.
+                                    </div>
                                 </a></div>
                         </div>
                     </div>
@@ -218,7 +296,7 @@
                             <div class="swiper-slide case-slider__item"> <a class="case" href="ami.html">
                                     <div class="case__img"> <img src="img/case/case-3.webp" alt=""></div>
                                     <div class="case__name">Интернет-магазин AMIHOME </div>
-                                    <div class="case__about">Сервис расширенной гарантии Hankook.</div>
+                                    <div class="case__about">Разработка и поддержка магазина онлайн.</div>
                                 </a></div>
                         </div>
                     </div>
@@ -228,7 +306,7 @@
                                     <div class="case__img"> <img src="img/case/case-4.webp" alt=""></div>
                                     <div class="case__name">SMM-стратегия для бренда
                                         постельного белья</div>
-                                    <div class="case__about">Сервис расширенной гарантии Hankook.</div>
+                                    <div class="case__about">Разработка логотипа и фирменного стиля.</div>
                                 </a></div>
                         </div>
                     </div>
@@ -238,47 +316,49 @@
                                     <div class="case__img"> <img src="img/case/case-5.webp" alt=""></div>
                                     <div class="case__name">Корпоративный сайт
                                         MARTIN MEDIA</div>
-                                    <div class="case__about">Сервис расширенной гарантии Hankook.</div>
+                                    <div class="case__about">Промосайт для продакшн-студии.</div>
                                 </a></div>
                         </div>
                     </div>
                     <div class="column_cases elem mar">
                         <div class="element-cases-animation">
-                            <div class="swiper-slide case-slider__item"> <a class="case" href="#">
-                                    <div class="case__img"> <img src="img/case/case-6.webp" alt=""></div>
+                            <div class="swiper-slide case-slider__item"> <a class="case" href="seo-centr.html">
+                                    <div class="case__img"> <img src="img/case/case-6.png" alt=""></div>
                                     <div class="case__name">SEO-продвижение для центра
                                         обучения</div>
-                                    <div class="case__about">Сервис расширенной гарантии Hankook.</div>
+                                    <div class="case__about">Разработка SEO-стратегии. Редизайн сайта для высоких
+                                        продаж.</div>
                                 </a></div>
                         </div>
                     </div>
                     <div class="column_cases elem mar">
                         <div class="element-cases-animation">
-                            <div class="swiper-slide case-slider__item"> <a class="case" href="#">
+                            <div class="swiper-slide case-slider__item"> <a class="case" href="seo-magistral.html">
                                     <div class="case__img"> <img src="img/case/case-7.webp" alt=""></div>
                                     <div class="case__name">SEO-продвижение санатория
                                         Магистральный</div>
-                                    <div class="case__about">Сервис расширенной гарантии Hankook.</div>
+                                    <div class="case__about">Создание нового сайта и разработкой стратегии продвижения.
+                                    </div>
                                 </a></div>
                         </div>
                     </div>
-                    <div class="column_cases elem des">
+                    <!-- <div class="column_cases elem des">
                         <div class="element-cases-animation">
-                            <div class="swiper-slide case-slider__item"> <a class="case" href="#">
+                            <div class="swiper-slide case-slider__item"> <a class="case" href="askona.html">
                                     <div class="case__img"> <img src="img/case/case-8.webp" alt=""></div>
                                     <div class="case__name">Редизайн и техническая поддержка
                                         сайта АСКОНА</div>
-                                    <div class="case__about">Сервис расширенной гарантии Hankook.</div>
+                                    <div class="case__about">Техническая поддержка и уникальные доработки сайта.</div>
                                 </a></div>
                         </div>
-                    </div>
+                    </div> -->
                     <div class="column_cases elem shop">
                         <div class="element-cases-animation">
-                            <div class="swiper-slide case-slider__item"> <a class="case" href="#">
+                            <div class="swiper-slide case-slider__item"> <a class="case" href="ssavto.html">
                                     <div class="case__img"> <img src="img/case/case-9.webp" alt=""></div>
                                     <div class="case__name">Разработка интернет-магазина
                                         автозапчастей</div>
-                                    <div class="case__about">Сервис расширенной гарантии Hankook.</div>
+                                    <div class="case__about">Сайт с огромными каталогами новых и б/у запчастей.</div>
                                 </a></div>
                         </div>
                     </div>
@@ -289,42 +369,41 @@
                                     <div class="case__img"> <img src="img/case/case-10.webp" alt=""></div>
                                     <div class="case__name">CRM-система для мебельной
                                         компании</div>
-                                    <div class="case__about">CRM-система для мебельной
-                                        компании</div>
+                                    <div class="case__about">Автоматизация внутренних процессов мебельной компании.
+                                    </div>
                                 </a></div>
                         </div>
                     </div>
                     <div class="column_cases elem exc">
                         <div class="element-cases-animation">
-                            <div class="swiper-slide case-slider__item"> <a class="case" href="#">
-                                    <div class="case__img"> <img src="img/case/case-11.webp" alt="my-spot.html"></div>
+                            <div class="swiper-slide case-slider__item"> <a class="case" href="myspot.html">
+                                    <div class="case__img"> <img src="img/case/case-11.png" alt="my-spot.html"></div>
                                     <div class="case__name">Разработка сервиса посуточной
                                         аренды квартир MySpot</div>
-                                    <div class="case__about">Сервис поиска арендного жилья.</div>
+                                    <div class="case__about">Мультиязычный и мультивалютный сайт поиска квартир и
+                                        катеджей в аренду.</div>
                                 </a></div>
                         </div>
                     </div>
                     <div class="column_cases elem crm">
                         <div class="element-cases-animation">
-                            <div class="swiper-slide case-slider__item"> <a class="case" href="#">
-                                    <div class="case__img"> <img src="img/case/case-12.webp" alt=""></div>
+                            <div class="swiper-slide case-slider__item"> <a class="case" href="etopizza.html">
+                                    <div class="case__img"> <img src="img/case/case-12.png" alt=""></div>
                                     <div class="case__name">СRM-система для ведения заказов
                                         сети пиццерий</div>
-                                    <div class="case__about">Внутренний сервис организации и контроля работы пиццерии.
+                                    <div class="case__about">Внутренний сервис организации и контроля работы пиццерий.
                                     </div>
                                 </a></div>
                         </div>
                     </div>
-
-
-
                     <div class="column_cases elem des">
                         <div class="element-cases-animation">
-                            <div class="swiper-slide case-slider__item"> <a class="case" href="#">
+                            <div class="swiper-slide case-slider__item"> <a class="case" href="family-house.html">
                                     <div class="case__img"> <img src="img/case/case-15.webp" alt=""></div>
                                     <div class="case__name">Landing page компании
-                                        Famly House</div>
-                                    <div class="case__about">Сервис расширенной гарантии Hankook.</div>
+                                        Family House</div>
+                                    <div class="case__about">Сервис по продаже деревянных домов с калькулятором
+                                        стоимости.</div>
                                 </a></div>
                         </div>
                     </div>
@@ -334,7 +413,7 @@
                                     <div class="case__img"> <img src="img/case/case-14.webp" alt=""></div>
                                     <div class="case__name">Разработка и техническая поддержка
                                         сайта для ЖК “D3”</div>
-                                    <div class="case__about">Сервис расширенной гарантии Hankook.</div>
+                                    <div class="case__about">Сервис продажи квартир в жилом комплексе.</div>
                                 </a></div>
                         </div>
                     </div>
@@ -344,17 +423,19 @@
                                     <div class="case__img"> <img src="img/case/case-16.webp" alt=""></div>
                                     <div class="case__name">Landing page компании
                                         СDEK</div>
-                                    <div class="case__about">Сервис расширенной гарантии Hankook.</div>
+                                    <div class="case__about">Дизайн стартовой страницы для логистической компании.</div>
                                 </a></div>
                         </div>
                     </div>
                     <div class="column_cases elem corp">
                         <div class="element-cases-animation">
                             <div class="swiper-slide case-slider__item"> <a class="case" href="water.html">
-                                    <div class="case__img"> <img src="img/case/case-17.webp" alt=""></div>
+                                    <div class="case__img"> <img src="img/case/case-17.png" alt=""></div>
                                     <div class="case__name">Корпоративный сайт компании
                                         IONWATER</div>
-                                    <div class="case__about">Сервис расширенной гарантии Hankook.</div>
+                                    <div class="case__about">Landing page систем ионизации воды.
+
+                                    </div>
                                 </a></div>
                         </div>
                     </div>
@@ -364,37 +445,56 @@
                                     <div class="case__img"> <img src="img/case/case-18.webp" alt=""></div>
                                     <div class="case__name">Разработка сайта для компании
                                         KORFILM</div>
-                                    <div class="case__about">Сервис расширенной гарантии Hankook.</div>
+                                    <div class="case__about">Решение на уникальм дизайне для сервиса производства фото и
+                                        видео контента.</div>
                                 </a></div>
                         </div>
                     </div>
                     <div class="column_cases elem des">
                         <div class="element-cases-animation">
-                            <div class="swiper-slide case-slider__item"> <a class="case" href="#">
-                                    <div class="case__img"> <img src="img/case/case-19.webp" alt=""></div>
-                                    <div class="case__name">Landing page компании
-                                        Famly House</div>
-                                    <div class="case__about">Сервис расширенной гарантии Hankook.</div>
+                            <div class="swiper-slide case-slider__item"> <a class="case" href="assuta.html">
+                                    <div class="case__img"> <img src="img/case/case-19.png" alt=""></div>
+                                    <div class="case__name">Разработка сайт частной медицинской клиники</div>
+                                    <div class="case__about">Унильный дизайн сайта для частной клиники в Израиле.</div>
                                 </a></div>
                         </div>
                     </div>
-                    <div class="column_cases elem corp">
+                    <!-- <div class="column_cases elem corp">
                         <div class="element-cases-animation">
-                            <div class="swiper-slide case-slider__item"> <a class="case" href="#">
+                            <div class="swiper-slide case-slider__item"> <a class="case" href="derevo.html">
                                     <div class="case__img"> <img src="img/case/case-13.webp" alt=""></div>
                                     <div class="case__name">Корпоративный сайт для
                                         деревообрабатывающей компании</div>
-                                    <div class="case__about">Сервис расширенной гарантии Hankook.</div>
+                                    <div class="case__about">Сайт международной компании на уникальном дизайне.</div>
+                                </a></div>
+                        </div>
+                    </div> -->
+                    <div class="column_cases elem mar">
+                        <div class="element-cases-animation">
+                            <div class="swiper-slide case-slider__item"> <a class="case" href="son-market.html">
+                                    <div class="case__img"> <img src="img/case/case-20.jpg" alt=""></div>
+                                    <div class="case__name">SMM-стратегия для бренда постельного белья</div>
+                                    <div class="case__about">Разработать стратегию продвижения бренда в социальных
+                                        сетях, увеличить узноваемость в других регионах Беларуси</div>
                                 </a></div>
                         </div>
                     </div>
-
+                    <div class="column_cases elem shop">
+                        <div class="element-cases-animation">
+                            <div class="swiper-slide case-slider__item"> <a class="case" href="tangallery.html">
+                                    <div class="case__img"> <img src="img/case/tangallery.jpg" alt=""></div>
+                                    <div class="case__name">Инетрнет-магазин премиум косметики</div>
+                                    <div class="case__about">Разработка и поддержка интернет-магазина премиум косметики
+                                        Tangallery</div>
+                                </a></div>
+                        </div>
+                    </div>
 
                 </div>
 
             </div>
         </div>
-        <div class="content">
+        <div class="content" style="margin: 4%;">
             <div class="main-container">
                 <div class="request-container request--blue">
                     <div class="request__text">
@@ -426,7 +526,7 @@
                     </div>
                     <div class="letter__text">, или по электронной почте</div>
                     <div class="letter__form">
-                        <input class="letter__form-input is-error" type="text" placeholder="your@email.ru">
+                        <input class="letter__form-input " type="text" placeholder="your@email.ru">
                     </div>
                     <div class="letter__text">. Меня интересует </div>
                     <div class="letter__form-textarea-cont">
@@ -455,6 +555,34 @@
                 </div>
             </div>
         </div>
+        <script>
+            $(function () {
+
+                qqq = window.location.hash;
+                if (qqq[0] == '#') {
+                    var filter = window.location.hash.replace('#', '');
+                    //console.log(document.querySelector('.nav__link[data-felter="'+filter+'"]'));
+                    var el = document.getElementById(filter);
+                    var all = document.getElementById('all');
+                    el.classList.add("is-active");
+                    all.classList.remove("is-active");
+
+                    a = document.getElementsByClassName('column_cases elem').length;
+                    console.log(a);
+                    var item = document.getElementsByClassName('column_cases elem');
+                    var item1 = document.getElementsByClassName('column_cases elem ' + filter + '');
+                    b = document.getElementsByClassName('column_cases elem ' + filter + '').length;
+                    for (i = 0; i <= a-1; i++) {
+item[i].style.display='none';
+
+                        }
+                        for (i = 0; i <= b-1; i++) {
+item1[i].style.display='block';
+
+                        }
+                    }
+            });
+        </script>
         <script type="text/javascript">
             let menuCases = document.querySelector('.menu_cases')
             let casesBtns = menuCases.querySelectorAll('.nav__link')
@@ -462,7 +590,7 @@
             let casesSelectText = document.querySelector('.menu-cases__holder-text')
 
             for (const casesBtn of casesBtns) {
-                casesBtn.addEventListener('click', function(){
+                casesBtn.addEventListener('click', function () {
                     for (const casesBtn of casesBtns) {
                         casesBtn.classList.remove('is-active');
                     }
@@ -476,12 +604,12 @@
                 });
             }
 
-            casesSelect.addEventListener('click', function(){
-                if (menuCases.style.maxHeight){
+            casesSelect.addEventListener('click', function () {
+                if (menuCases.style.maxHeight) {
                     menuCases.style.maxHeight = null;
                     this.classList.remove('is-active');
                 } else {
-                    menuCases.style.maxHeight =  menuCases.scrollHeight + "px";
+                    menuCases.style.maxHeight = menuCases.scrollHeight + "px";
                     this.classList.add('is-active');
                 }
             });
@@ -545,12 +673,12 @@
                         <ul class="footer-nav">
                             <li class="footer-nav__item"><a class="footer-nav__link" href="about-company.html">О
                                     компании </a></li>
-                            <li class="footer-nav__item"><a class="footer-nav__link" href="#">Блог </a></li>
-                            <li class="footer-nav__item"><a class="footer-nav__link" href="#">Партнеры</a></li>
+                            <li class="footer-nav__item"><a class="footer-nav__link" href="blog.html">Блог </a></li>
+
                             <li class="footer-nav__item"><a class="footer-nav__link" href="cases.html">Кейсы</a></li>
                             <li class="footer-nav__item"><a class="footer-nav__link" href="reviews.html">Отзывы</a></li>
                             <li class="footer-nav__item"><a class="footer-nav__link"
-                                    href="img/documents/LLC-Laikit.docx">Реквизиты </a>(<a
+                                    href="img/documents/LLC-Laikit.docx">Реквизиты </a> (<a
                                     class="footer-nav__link-download" href="img/documents/LLC-Laikit.docx">Скачать</a>)
                             </li>
                         </ul>
@@ -572,7 +700,7 @@
                         <h3 class="footer__contacts-title">Наши контакты</h3>
                         <div class="contacts footer__contacts"><a class="contacts__phone" href="tel:+375293220020">+375
                                 (29) 322-00-20</a><a class="contacts__mail" href="mailto:">info@likeit.by</a>
-                            <div class="contacts__address"> <span>Минск, ул. Казинца 11а </span><span>Барановичи, </br>
+                            <div class="contacts__address"> <span>Минск, ул. Казинца 11а <br>Барановичи, </br>
                                     ул. Куйбышева,111 офис 211</span></div>
                         </div>
                     </div>

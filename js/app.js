@@ -176,11 +176,56 @@ $(window).scroll(function(event){
    var scroller = $(this).scrollTop();
    if (scroller-senseSpeed > previousScroll){
       $("a.feedback").filter(':not(:animated)').slideUp();
+      $("a.page-copy-right").filter(':not(:animated)').slideUp();
    } else if (scroller+senseSpeed < previousScroll) {
       $("a.feedback").filter(':not(:animated)').slideDown();
+      $("a.page-copy-right").filter(':not(:animated)').slideDown();
    }
    previousScroll = scroller;
 
 });
 
 
+function getCookie(name) {
+    let matches = document.cookie.match(new RegExp(
+    "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
+    ));
+    return matches ? decodeURIComponent(matches[1]) : undefined;
+}
+let cookiecook = getCookie("cookiecook"),
+cookiewin = document.getElementsByClassName('cookie_notice')[0];  
+// проверяем, есть ли у нас cookie, с которой мы не показываем окно и если нет, запускаем показ
+if (cookiecook != "no") {
+    // показываем    
+    cookiewin.style.display="block"; 
+    // закрываем по клику
+    document.getElementById("cookie_close").addEventListener("click", function(){
+        cookiewin.style.display="none";    
+        // записываем cookie на 1 день, с которой мы не показываем окно
+        let date = new Date;
+        date.setDate(date.getDate() + 1);    
+        document.cookie = "cookiecook=no; path=/; expires=" + date.toUTCString();               
+    });
+}
+var el1=document.getElementById('privat');
+document.querySelector("#close-form-btn").onclick = function(){
+    el1.style.display="none";
+  }
+
+  function checkParams() {
+    var name = $('#name').val();
+    var email = $('#email').val();
+    var phone = $('#phone').val();
+     console.log(name);
+     console.log(phone);
+     console.log(email);
+     var el2=document.getElementById('mailto');
+    
+    if(name.length > 0 && email.length > 0 && phone.length > 0) {
+        el2.style.pointerEvents = 'auto';
+        console.log(2)
+    } else {
+        el2.style.pointerEvents = 'none';
+        console.log(1)
+    }
+}

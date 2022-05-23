@@ -7,17 +7,29 @@
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="ie=edge" http-equiv="x-ua-compatible">
     <meta name="description"
-    content="Сбор информации о проекте, маркетинговый анализ, разработка технического задания для нативного приложения, интеграция и тестирование" />
-<meta name="keywords" content="нативные приложения" />
+        content="Сбор информации о проекте, маркетинговый анализ, разработка технического задания для нативного приложения, интеграция и тестирование" />
+    <meta name="keywords" content="нативные приложения" />
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/main.css">
-
+    <style>
+        .page-bn .fact {
+            width: 90%;
+        }
+    </style>
 </head>
 
 <body>
+  <div class="cookie_notice" id="privat">
+    <div class="qqq"><div class="qqq1">Мы используем файлы cookie для улучшения работы сайта. Подробную
+      информацию вы найдете в <a class="qqq3" target="_blank" href="consent.html">Политике ООО "Лайкит" обработки
+        персональных данных</a>.</div>
+        <div class="qqq2"> <a class="cookie_btn" id="cookie_close" href="#close">Согласиться</a> <span class="close" id="close-form-btn"></span></div>
+     
+    </div>
+  </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <div id="overlay"></div>
     <main id="main">
@@ -58,7 +70,7 @@
                             <li class="nav__item nav__item--mobile"> <a class="nav__link" href="cases.html">Кейсы</a>
                             </li>
                             <li class="nav__item"> <a class="nav__link" href="reviews.html">Отзывы</a></li>
-                            <li class="nav__item"> <a class="nav__link" href="#">Вакансии</a></li>
+                            <li class="nav__item"> <a class="nav__link" href="job-openings.html">Вакансии</a></li>
                             <li class="nav__item"> <a class="nav__link" href="blog.html">Блог</a></li>
                             <li class="nav__item"> <a class="nav__link" href="contacts.html">Контакты</a></li>
                         </ul>
@@ -98,7 +110,7 @@
                                 <ul class="menu-list">
                                     <li class="menu-list__item"> <a class="menu-list__link" href="cases.html">Кейсы</a>
                                     </li>
-                                    <li class="menu-list__item"> <a class="menu-list__link" href="#">UX/UI дизайн</a>
+                                    <li class="menu-list__item"> <a class="menu-list__link" href="cases.html#des">UX/UI дизайн</a>
                                     </li>
                                     <li class="menu-list__item"> <a class="menu-list__link"
                                             href="landing-page.html">Landing pages</a></li>
@@ -113,8 +125,11 @@
                             </div>
                             <div class="menu__col">
                                 <ul class="menu-list">
-                                    <li class="menu-list__item"> <a class="menu-list__link" href="#">Продукты</a></li>
-                                    <li class="menu-list__item"> <a class="menu-list__link" href="#">1С-Битрикс:
+                                    <li class="menu-list__item">
+                                        <div class="menu-list__link" href="#">Продукты</div>
+                                    </li>
+                                    <li class="menu-list__item"> <a class="menu-list__link"
+                                            href="buy-a-license.html">1С-Битрикс:
                                             Управление сайтом</a></li>
                                 </ul>
                             </div>
@@ -147,7 +162,7 @@
                 <div class="badge__icon"> <img src="img/top-10.svg" alt=""></div>
                 <div class="badge__body">
                     Топ-10 по версии <a class="badge__link" href="#">ratingbynet.by</a></div>
-            </div><a class="feedback" href="#">
+            </div><a class="feedback modal-btn" href="propouse">
                 <svg class="icon icon--feedback">
                     <use href="img/sprite.svg#feedback"></use>
                 </svg></a>
@@ -164,7 +179,9 @@
                 <ul class="breadcrumbs mb-15">
                     <li class="breadcrumbs__item"> <a class="breadcrumbs__link" href="https://new.likeit.pro/">Главная
                         </a></li>
-                    <li class="breadcrumbs__item">Разработка</li>
+                    <li class="breadcrumbs__item"> <a class="breadcrumbs__link" href="ios-android.html">IOS/Android
+                        </a></li>
+                    <li class="breadcrumbs__item">Нативные приложения</li>
                 </ul>
                 <div class="page-bn">
                     <div class="page-bn__img"><img src="img/bn-14.webp" alt=""></div>
@@ -172,7 +189,7 @@
                         <div class="page-bn__left">
                             <h1 class="block-title" data-aos="fade-right">Нативные приложения</h1>
                             <div class="block-sub-title" data-aos="fade-right" data-aos-delay="300">Разработка мобильных
-                                приложений— это важнейший этап в развитии любой компании,
+                                приложений — это важнейший этап в развитии любой компании,
                                 позволяющий привлекать и удерживать новых клиентов, увеличивать продажи
                                 и систематизировать ведение бизнеса.</div><a class="btn btn-primary modal-btn"
                                 href="propouse" data-aos="fade-right" data-aos-delay="600">Оставить
@@ -182,17 +199,13 @@
                                 </svg></a>
 
                         </div>
-                    </div>
-                    <div class="page-bn__bagges">
-                        <div class="page-bn__bagges-item">
-                            <img src="img/develop-badge/swiftlink.webp" alt="">
-                        </div>  
-                        <div class="page-bn__bagges-item">
-                            <img src="img/develop-badge/swift.webp" alt="">
-                        </div> 
-                        <div class="page-bn__bagges-item">
-                            <img src="img/develop-badge/objective.webp" alt="">
-                        </div>   
+                        <div class="page-bn__right" data-aos="fade-left" style="justify-content: flex-end;
+                        flex-direction: column;
+                        align-items: flex-end;">
+                            <div class="pege-bn__facts">
+                                <div class="fact"> <img src="img/mob-logo/nativ.svg" alt=""></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -227,8 +240,7 @@
                                     </div>
                                     <div class="letter__text">, или по электронной почте</div>
                                     <div class="letter__form">
-                                        <input class="letter__form-input is-error" type="text"
-                                            placeholder="your@email.ru">
+                                        <input class=" letter__form-input" type="text" placeholder="your@email.ru">
                                     </div>
                                     <div class="letter__text">. Меня интересует </div>
                                     <div class="letter__form-textarea-cont">
@@ -316,8 +328,7 @@
                                     </div>
                                     <div class="letter__text">, или по электронной почте</div>
                                     <div class="letter__form">
-                                        <input class="letter__form-input is-error" type="text"
-                                            placeholder="your@email.ru">
+                                        <input class=" letter__form-input" type="text" placeholder="your@email.ru">
                                     </div>
                                     <div class="letter__text">. Меня интересует </div>
                                     <div class="letter__form-textarea-cont">
@@ -339,8 +350,8 @@
                                         </svg></a>
                                     <div class="checkbox">
                                         <!--.is-error-->
-                                        <input class="checkbox__input" type="checkbox" id="checkbox-1">
-                                        <label class="checkbox__label" for="checkbox-1">Согласие на обработку
+                                        <input class="checkbox__input" type="checkbox" id="checkbox-2">
+                                        <label class="checkbox__label" for="checkbox-2">Согласие на обработку
                                             персональных данных</label>
                                     </div>
                                 </div>
@@ -468,7 +479,7 @@
             <div class="main-container-sm">
                 <div class="block-header">
                     <div class="block-header__left">
-                        <h3 class="block-title">Нашы кейсы</h3>
+                        <h3 class="block-title">Наши кейсы</h3>
                         <div class="block-sub-title">Не важно из какой вы сферы, мы в действительности погрузимся в
                             ваши
                             процессы, наши специалисты приедут к вам и узнают всё, о чем вы хотите рассказать вашим
@@ -491,19 +502,22 @@
                                 <div class="case__about">Сервис расширенной гарантии Hankook.</div>
                             </a></div>
                         <div class="swiper-slide case-slider__item"> <a class="case" href="petztrove.html">
-                                <div class="case__img"> <img src="img/case/case-2.webp" alt=""></div>
+                                <div class="case__img"> <img src="img/case/case-20.webp" alt=""></div>
                                 <div class="case__name">Мобильное приложение PetzTrove</div>
-                                <div class="case__about">Сервис расширенной гарантии Hankook.</div>
+                                <div class="case__about">Монетизированный сервис с заботой о домашних животных.</div>
                             </a></div>
-                        <div class="swiper-slide case-slider__item"> <a class="case" href="ami.html">
-                                <div class="case__img"> <img src="img/case/case-3.webp" alt=""></div>
-                                <div class="case__name">Интернет-магазин AMIHOME </div>
-                                <div class="case__about">Сервис расширенной гарантии Hankook.</div>
-                            </a></div>
-                        <div class="swiper-slide case-slider__item"> <a class="case" href="divahome.html">
-                                <div class="case__img"> <img src="img/case/case-4.webp" alt=""></div>
-                                <div class="case__name">Интерент-магазин постельного белья</div>
-                                <div class="case__about">Сервис расширенной гарантии Hankook.</div>
+                        <!-- <div class="swiper-slide case-slider__item"> <a class="case" href="askona.html">
+                                <div class="case__img"> <img src="img/case/case-8.webp" alt=""></div>
+                                <div class="case__name">Редизайн и техническая поддержка
+                                    сайта АСКОНА</div>
+                                <div class="case__about">Техническая поддержка и уникальные доработки сайта.</div>
+                            </a></div> -->
+                        <div class="swiper-slide case-slider__item"> <a class="case" href="etopizza.html">
+                                <div class="case__img"> <img src="img/case/case-12.png" alt=""></div>
+                                <div class="case__name">СRM-система для ведения заказов
+                                    сети пиццерий</div>
+                                <div class="case__about">Внутренний сервис организации и контроля работы пиццерий.
+                                </div>
                             </a></div>
                     </div>
                 </div>
@@ -537,7 +551,7 @@
                     </div>
                     <div class="letter__text">, или по электронной почте</div>
                     <div class="letter__form">
-                        <input class="letter__form-input is-error" type="text" placeholder="your@email.ru">
+                        <input class=" letter__form-input" type="text" placeholder="your@email.ru">
                     </div>
                     <div class="letter__text">. Меня интересует </div>
                     <div class="letter__form-textarea-cont">
@@ -591,12 +605,12 @@
                         <ul class="footer-nav">
                             <li class="footer-nav__item"><a class="footer-nav__link" href="about-company.html">О
                                     компании </a></li>
-                            <li class="footer-nav__item"><a class="footer-nav__link" href="#">Блог </a></li>
-                            <li class="footer-nav__item"><a class="footer-nav__link" href="#">Партнеры</a></li>
+                            <li class="footer-nav__item"><a class="footer-nav__link" href="blog.html">Блог </a></li>
+
                             <li class="footer-nav__item"><a class="footer-nav__link" href="cases.html">Кейсы</a></li>
                             <li class="footer-nav__item"><a class="footer-nav__link" href="reviews.html">Отзывы</a></li>
                             <li class="footer-nav__item"><a class="footer-nav__link"
-                                    href="img/documents/LLC-Laikit.docx">Реквизиты </a>(<a
+                                    href="img/documents/LLC-Laikit.docx">Реквизиты </a> (<a
                                     class="footer-nav__link-download" href="img/documents/LLC-Laikit.docx">Скачать</a>)
                             </li>
                         </ul>
@@ -619,7 +633,7 @@
                         <h3 class="footer__contacts-title">Наши контакты</h3>
                         <div class="contacts footer__contacts"><a class="contacts__phone" href="tel:+375293220020">+375
                                 (29) 322-00-20</a><a class="contacts__mail" href="mailto:">info@likeit.by</a>
-                            <div class="contacts__address"> <span>Минск, ул. Казинца 11а </span><span>Барановичи,
+                            <div class="contacts__address"> <span>Минск, ул. Казинца 11а <br>Барановичи,
                                     </br>
                                     ул. Куйбышева,111 офис 211</span></div>
                         </div>

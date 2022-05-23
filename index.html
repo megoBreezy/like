@@ -15,10 +15,22 @@
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/aos.css">
   <link rel="stylesheet" href="css/main.css">
-
+  <style>
+    .welcome__title {
+      font-size: 45px;
+    }
+  </style>
 </head>
 
 <body>
+  <div class="cookie_notice" id="privat">
+    <div class="qqq"><div class="qqq1">Мы используем файлы cookie для улучшения работы сайта. Подробную
+      информацию вы найдете в <a class="qqq3" target="_blank" href="/consent.html">Политике ООО "Лайкит" обработки
+        персональных данных</a>.</div>
+        <div class="qqq2"> <a class="cookie_btn" id="cookie_close" href="#close">Согласиться</a> <span class="close" id="close-form-btn"></span></div>
+     
+    </div>
+  </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <h1 hidden>Создание, разработка и продвижение сайтов для бизнеса</h1>
   <div id="overlay"></div>
@@ -56,7 +68,7 @@
               <li class="nav__item nav__item--mobile"> <a class="nav__link" href="services.html">Услуги</a></li>
               <li class="nav__item nav__item--mobile"> <a class="nav__link" href="cases.html">Кейсы</a></li>
               <li class="nav__item"> <a class="nav__link" href="reviews.html">Отзывы</a></li>
-              <li class="nav__item"> <a class="nav__link" href="#">Вакансии</a></li>
+              <li class="nav__item"> <a class="nav__link" href="job-openings.html">Вакансии</a></li>
               <li class="nav__item"> <a class="nav__link" href="blog.html">Блог</a></li>
               <li class="nav__item"> <a class="nav__link" href="contacts.html">Контакты</a></li>
             </ul>
@@ -89,7 +101,7 @@
               <div class="menu__col">
                 <ul class="menu-list">
                   <li class="menu-list__item"> <a class="menu-list__link" href="cases.html">Кейсы</a></li>
-                  <li class="menu-list__item"> <a class="menu-list__link" href="#">UX/UI дизайн</a></li>
+                  <li class="menu-list__item"> <a class="menu-list__link" href="cases.html#des">UX/UI дизайн</a></li>
                   <li class="menu-list__item"> <a class="menu-list__link" href="landing-page.html">Landing pages</a>
                   </li>
                   <li class="menu-list__item"> <a class="menu-list__link"
@@ -101,8 +113,11 @@
               </div>
               <div class="menu__col">
                 <ul class="menu-list">
-                  <li class="menu-list__item"> <a class="menu-list__link" href="#">Продукты</a></li>
-                  <li class="menu-list__item"> <a class="menu-list__link" href="#">1С-Битрикс: Управление сайтом</a>
+                  <li class="menu-list__item">
+                    <div class="menu-list__link" href="#">Продукты</div>
+                  </li>
+                  <li class="menu-list__item"> <a class="menu-list__link" href="buy-a-license.html">1С-Битрикс:
+                      Управление сайтом</a>
                   </li>
                 </ul>
               </div>
@@ -134,7 +149,7 @@
         <div class="badge__icon"> <img src="img/top-10.svg" alt=""></div>
         <div class="badge__body">
           Топ-10 по версии <a class="badge__link" href="#">ratingbynet.by</a></div>
-      </div><a class="feedback" href="#">
+      </div><a class="feedback modal-btn" href="propouse">
         <svg class="icon icon--feedback">
           <use href="img/sprite.svg#feedback"></use>
         </svg></a>
@@ -153,7 +168,7 @@
               <div class="swiper-slide">
                 <div class="welcome__left">
                   <h2 class="welcome__title" data-aos="fade-up"> <span class="text-blue">Разрабатываем </span><span
-                      class="text-red">надёжные </span>решения для бизнеса
+                      class="text-red">надёжные<br></span>решения для бизнеса
                     <div class="welcome__title-icon"> <img src="img/label-number.svg" alt=""></div>
                   </h2>
                   <div class="welcome__text" data-aos="fade-up" data-aos-delay="300">Эффективные в долгосрочной
@@ -164,20 +179,50 @@
                         <use href="img/sprite.svg#arrow-right"></use>
                       </svg></a></div>
                 </div>
-                <div class="welcome__img" data-aos="fade-left" data-aos-delay="300"> <img src="img/welcome-1.webp"
+                <div class="welcome__img" data-aos="fade-left" data-aos-delay="300"> <img src="img/welcome-1.png"
                     alt=""></div>
               </div>
               <div class="swiper-slide">
                 <div class="welcome__left">
-                  <h2 class="welcome__title"> <span class="text-blue">Нам пох*р что </span><span
-                      class="text-red">интегрировать, </span>главное что бы было API</h2>
+                  <h2 class="welcome__title"> <span class="text-blue"> Интегрируем </span><span class="text-red">все со
+                      всем, <br></span>главное что бы было API</h2>
                   <div class="welcome__text">Все задачи IT-аутсорсинга от малого до крупного бизнеса</div><a
                     class="btn btn-primary" href="services.html">Наши услуги
                     <svg class="icon icon--arrow-right">
                       <use href="img/sprite.svg#arrow-right"></use>
                     </svg></a>
                 </div>
-                <div class="welcome__img"> <img src="img/welcome-2.webp" alt=""></div>
+                <div class="welcome__img"> <img src="img/welcome-2.png" alt=""></div>
+              </div>
+
+
+              <div class="swiper-slide">
+                <div class="welcome__left">
+                  <h2 class="welcome__title"> <span class="text-blue">Техническая </span><span
+                      class="text-red">поддержка <br></span>вашего проекта</h2>
+                  <div class="welcome__text">Берем на развитие и поддержку проекты на 1С-Битрикс, созданные другими
+                    разработчиками</div><a class="btn btn-primary" href="technical-support.html">Подробнее
+                    <svg class="icon icon--arrow-right">
+                      <use href="img/sprite.svg#arrow-right"></use>
+                    </svg></a>
+                </div>
+                <div class="welcome__img"><img src="img/welcome-3.png" alt="">
+                </div>
+              </div>
+
+
+
+              <div class="swiper-slide">
+                <div class="welcome__left">
+                  <h2 class="welcome__title"> <span class="text-blue">Превращаем </span><span class="text-red">набор
+                      требований <br></span> в удобный продукт</h2>
+                  <div class="welcome__text">Воплощаем самые смелые задумки и экономим вам деньги.</div><a
+                    class="btn btn-primary" href="services.html">Наши услуги
+                    <svg class="icon icon--arrow-right">
+                      <use href="img/sprite.svg#arrow-right"></use>
+                    </svg></a>
+                </div>
+                <div class="welcome__img"> <img src="img/welcome-4.png" alt=""></div>
               </div>
             </div>
           </div>
@@ -195,7 +240,7 @@
                 </div>
                 <div class="main-container-sm">
                   <h3 class="title-lg">Оставить заявку</h3>
-                  <p class="sub-title-lg">Заполнити форму обратной связи и мы вышлев вам коммерческое предложение</p>
+                  <p class="sub-title-lg">Заполнити форму обратной связи и мы вышлем вам коммерческое предложение</p>
                   <div class="letter">
                     <div class="letter__text">Привет, меня зовут</div>
                     <div class="letter__form">
@@ -211,7 +256,7 @@
                     </div>
                     <div class="letter__text">, или по электронной почте</div>
                     <div class="letter__form">
-                      <input class="letter__form-input is-error" type="text" placeholder="your@email.ru">
+                      <input class=" letter__form-input" type="text" placeholder="your@email.ru">
                     </div>
                     <div class="letter__text">. Меня интересует </div>
                     <div class="letter__form-textarea-cont">
@@ -297,7 +342,7 @@
                       class="decision__link" href="tilda.html">Создание сайтов на Tilda</a><a class="decision__link"
                       href="highly-loaded.html">Создание высоконагруженных проектов </a><a class="decision__link"
                       href="1с-bitrix-sait.html">Разработка сайтов на 1С-Битрикс</a><a class="decision__link"
-                      href="buy a license.html">Купить лицензию 1С-Битрикс</a></div>
+                      href="buy-a-license.html">Купить лицензию 1С-Битрикс</a></div>
                 </div>
               </div>
             </div>
@@ -425,7 +470,7 @@
       <div class="main-container-sm">
         <div class="block-header">
           <div class="block-header__left">
-            <h3 class="block-title">Нашы кейсы</h3>
+            <h3 class="block-title">Наши кейсы</h3>
             <div class="block-sub-title">Не важно из какой вы сферы, мы в действительности погрузимся в ваши процессы,
               наши специалисты приедут к вам и узнают всё, о чем вы хотите рассказать вашим пользователям.</div>
           </div>
@@ -445,19 +490,20 @@
                 <div class="case__about">Сервис расширенной гарантии Hankook.</div>
               </a></div>
             <div class="swiper-slide case-slider__item"> <a class="case" href="petztrove.html">
-                <div class="case__img"> <img src="img/case/case-2.webp" alt=""></div>
+                <div class="case__img"> <img src="img/case/case-20.webp" alt=""></div>
                 <div class="case__name">Мобильное приложение PetzTrove</div>
-                <div class="case__about">Сервис расширенной гарантии Hankook.</div>
+                <div class="case__about">Монетизированный сервис с заботой о домашних животных.</div>
               </a></div>
             <div class="swiper-slide case-slider__item"> <a class="case" href="ami.html">
                 <div class="case__img"> <img src="img/case/case-3.webp" alt=""></div>
                 <div class="case__name">Интернет-магазин AMIHOME </div>
-                <div class="case__about">Сервис расширенной гарантии Hankook.</div>
+                <div class="case__about">Разработка и поддержка магазина онлайн.</div>
               </a></div>
-            <div class="swiper-slide case-slider__item"> <a class="case" href="divahome.html">
+            <div class="swiper-slide case-slider__item elem mar"> <a class="case" href="divahome.html">
                 <div class="case__img"> <img src="img/case/case-4.webp" alt=""></div>
-                <div class="case__name">Интерент-магазин постельного белья</div>
-                <div class="case__about">Сервис расширенной гарантии Hankook.</div>
+                <div class="case__name">SMM-стратегия для бренда
+                  постельного белья</div>
+                <div class="case__about">Разработка логотипа и фирменного стиля.</div>
               </a></div>
           </div>
         </div>
@@ -658,7 +704,7 @@
             </div>
             <div class="letter__text">, или по электронной почте</div>
             <div class="letter__form">
-              <input class="letter__form-input is-error" type="text" placeholder="your@email.ru">
+              <input class=" letter__form-input" type="text" placeholder="your@email.ru">
             </div>
             <div class="letter__text">. Меня интересует </div>
             <div class="letter__form-textarea-cont">
@@ -711,12 +757,12 @@
           <div class="footer__col">
             <ul class="footer-nav">
               <li class="footer-nav__item"><a class="footer-nav__link" href="about-company.html">О компании </a></li>
-              <li class="footer-nav__item"><a class="footer-nav__link" href="#">Блог </a></li>
-              <li class="footer-nav__item"><a class="footer-nav__link" href="#">Партнеры</a></li>
+              <li class="footer-nav__item"><a class="footer-nav__link" href="blog.html">Блог </a></li>
+
               <li class="footer-nav__item"><a class="footer-nav__link" href="cases.html">Кейсы</a></li>
               <li class="footer-nav__item"><a class="footer-nav__link" href="reviews.html">Отзывы</a></li>
               <li class="footer-nav__item"><a class="footer-nav__link" href="img/documents/LLC-Laikit.docx">Реквизиты
-                </a>(<a class="footer-nav__link-download" href="img/documents/LLC-Laikit.docx">Скачать</a>)</li>
+                </a> (<a class="footer-nav__link-download" href="img/documents/LLC-Laikit.docx">Скачать</a>)</li>
             </ul>
           </div>
           <div class="footer__col">
@@ -733,7 +779,7 @@
             <h3 class="footer__contacts-title">Наши контакты</h3>
             <div class="contacts footer__contacts"><a class="contacts__phone" href="tel:+375293220020">+375 (29)
                 322-00-20</a><a class="contacts__mail" href="mailto:">info@likeit.by</a>
-              <div class="contacts__address"> <span>Минск, ул. Казинца 11а </span><span>Барановичи, </br> ул.
+              <div class="contacts__address"> <span>Минск, ул. Казинца 11а <br>Барановичи, </br> ул.
                   Куйбышева,111 офис 211</span></div>
             </div>
           </div>

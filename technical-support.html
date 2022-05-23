@@ -18,6 +18,14 @@
 </head>
 
 <body>
+  <div class="cookie_notice" id="privat">
+    <div class="qqq"><div class="qqq1">Мы используем файлы cookie для улучшения работы сайта. Подробную
+      информацию вы найдете в <a class="qqq3" target="_blank" href="consent.html">Политике ООО "Лайкит" обработки
+        персональных данных</a>.</div>
+        <div class="qqq2"> <a class="cookie_btn" id="cookie_close" href="#close">Согласиться</a> <span class="close" id="close-form-btn"></span></div>
+     
+    </div>
+  </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <div id="overlay"></div>
     <main id="main">
@@ -58,7 +66,7 @@
                             <li class="nav__item nav__item--mobile"> <a class="nav__link" href="cases.html">Кейсы</a>
                             </li>
                             <li class="nav__item"> <a class="nav__link" href="reviews.html">Отзывы</a></li>
-                            <li class="nav__item"> <a class="nav__link" href="#">Вакансии</a></li>
+                            <li class="nav__item"> <a class="nav__link" href="job-openings.html">Вакансии</a></li>
                             <li class="nav__item"> <a class="nav__link" href="blog.html">Блог</a></li>
                             <li class="nav__item"> <a class="nav__link" href="contacts.html">Контакты</a></li>
                         </ul>
@@ -99,7 +107,7 @@
                                 <ul class="menu-list">
                                     <li class="menu-list__item"> <a class="menu-list__link" href="cases.html">Кейсы</a>
                                     </li>
-                                    <li class="menu-list__item"> <a class="menu-list__link" href="#">UX/UI дизайн</a>
+                                    <li class="menu-list__item"> <a class="menu-list__link" href="cases.html#des">UX/UI дизайн</a>
                                     </li>
                                     <li class="menu-list__item"> <a class="menu-list__link"
                                             href="landing-page.html">Landing pages</a>
@@ -116,8 +124,11 @@
                             </div>
                             <div class="menu__col">
                                 <ul class="menu-list">
-                                    <li class="menu-list__item"> <a class="menu-list__link" href="#">Продукты</a></li>
-                                    <li class="menu-list__item"> <a class="menu-list__link" href="#">1С-Битрикс:
+                                    <li class="menu-list__item">
+                                        <div class="menu-list__link" href="#">Продукты</div>
+                                    </li>
+                                    <li class="menu-list__item"> <a class="menu-list__link"
+                                            href="buy-a-license.html">1С-Битрикс:
                                             Управление сайтом</a></li>
                                 </ul>
                             </div>
@@ -150,7 +161,7 @@
                 <div class="badge__icon"> <img src="img/top-10.svg" alt=""></div>
                 <div class="badge__body">
                     Топ-10 по версии <a class="badge__link" href="#">ratingbynet.by</a></div>
-            </div><a class="feedback" href="#">
+            </div><a class="feedback modal-btn" href="propouse">
                 <svg class="icon icon--feedback">
                     <use href="img/sprite.svg#feedback"></use>
                 </svg></a>
@@ -167,7 +178,7 @@
                 <ul class="breadcrumbs mb-15">
                     <li class="breadcrumbs__item"> <a class="breadcrumbs__link" href="https://new.likeit.pro/">Главная
                         </a></li>
-                    <li class="breadcrumbs__item">Разработка</li>
+                    <li class="breadcrumbs__item">Техническая поддержка</li>
                 </ul>
                 <div class="page-bn">
                     <div class="page-bn__img"><img src="img/bn-6.webp" alt=""></div>
@@ -184,14 +195,7 @@
                                     <use href="img/sprite.svg#arrow-right"></use>
                                 </svg></a>
                         </div>
-                        <div class="page-bn__right" data-aos="fade-left">
-                            <div class="pege-bn__facts">
-                                <div class="fact"> <img src="img/facts/fact-1.webp" alt=""></div>
-                            </div>
-                            <div class="pege-bn__facts">
-                                <div class="fact"> <img src="img/facts/fact-3.webp" alt=""></div>
-                            </div>
-                        </div>
+
                     </div>
                 </div>
                 <div class="modal" id="propouse">
@@ -225,8 +229,7 @@
                                     </div>
                                     <div class="letter__text">, или по электронной почте</div>
                                     <div class="letter__form">
-                                        <input class="letter__form-input is-error" type="text"
-                                            placeholder="your@email.ru">
+                                        <input class=" letter__form-input" type="text" placeholder="your@email.ru">
                                     </div>
                                     <div class="letter__text">. Меня интересует </div>
                                     <div class="letter__form-textarea-cont">
@@ -275,7 +278,7 @@
                     <div class="count-list__item">
                         <div class="count__number count__number-lg"><span class="counter"
                                 data-purecounter-end="4"></span> часа</div>
-                        <div class="count__text">Скорость реакции на поставленную клиентом задачу
+                        <div class="count__text">скорость реакции на поставленную клиентом задачу
 
 
                         </div>
@@ -290,7 +293,7 @@
 
                     </p>
 
-                    <p> Наша компания стремимтся стать для наших клиентов не очередной командой, после которой нужно
+                    <p> Наша компания стремится стать для наших клиентов не очередной командой, после которой нужно
                         переделывать и перепроверять работу, а партнёром, который помогает развивать бизнес и
                         зарабатывать больше. Именно поэтому 80% наших клиентов становятся постоянными.</p>
 
@@ -301,28 +304,28 @@
                     <div class="benefits-list__item">
                         <div class="benefits-list__number">1.</div>
                         <div class="benefits-list__text">
-                            <p>С 2016 года наша команда каждый год подтверждает статус золотого партнёра 1С-Битрикс.
+                            <p>С 2016 года наша команда каждый год подтверждает статус золотого партнёра 1С-Битрикс
                             </p><br>
                         </div>
                     </div>
                     <div class="benefits-list__item">
                         <div class="benefits-list__number">2.</div>
                         <div class="benefits-list__text">
-                            <p>После выполнения задач, код обязательно проверяется на стабильность работы и чистоту.</p>
+                            <p>После выполнения задач, код обязательно проверяется на стабильность работы и чистоту</p>
                             <br>
                         </div>
                     </div>
                     <div class="benefits-list__item">
                         <div class="benefits-list__number">3.</div>
                         <div class="benefits-list__text">
-                            <p>Время реагирования специалистов начинается от 1-го рабочего часа.</p><br>
+                            <p>Время реагирования специалистов начинается от 1-го рабочего часа</p><br>
                         </div>
                     </div>
                     <div class="benefits-list__item">
                         <div class="benefits-list__number">4.</div>
                         <div class="benefits-list__text">
-                            <p>Каждая задача, выполненная разработчиком подлежит обязательно проверке QA-инженером, что
-                                позволяет обеспечить 100% качественную работу.</p><br>
+                            <p>Каждая задача, выполненная разработчиком подлежит обязательной проверке QA-инженером, что
+                                позволяет обеспечить 100% качественную работу</p><br>
                         </div>
                     </div>
                     <ul class="figure-list">
@@ -488,8 +491,7 @@
                                     </div>
                                     <div class="letter__text">, или по электронной почте</div>
                                     <div class="letter__form">
-                                        <input class="letter__form-input is-error" type="text"
-                                            placeholder="your@email.ru">
+                                        <input class=" letter__form-input" type="text" placeholder="your@email.ru">
                                     </div>
                                     <div class="letter__text">. Меня интересует </div>
                                     <div class="letter__form-textarea-cont">
@@ -511,8 +513,8 @@
                                         </svg></a>
                                     <div class="checkbox">
                                         <!--.is-error-->
-                                        <input class="checkbox__input" type="checkbox" id="checkbox-1">
-                                        <label class="checkbox__label" for="checkbox-1">Согласие на обработку
+                                        <input class="checkbox__input" type="checkbox" id="checkbox-2">
+                                        <label class="checkbox__label" for="checkbox-2">Согласие на обработку
                                             персональных данных</label>
                                     </div>
                                 </div>
@@ -523,7 +525,7 @@
                 <div class="main-container-sm">
                     <div class="block-header">
                         <div class="block-header__left">
-                            <h3 class="block-title">Нашы кейсы</h3>
+                            <h3 class="block-title">Наши кейсы</h3>
                             <div class="block-sub-title">Не важно из какой вы сферы, мы в действительности погрузимся в
                                 ваши
                                 процессы, наши специалисты приедут к вам и узнают всё, о чем вы хотите рассказать вашим
@@ -540,25 +542,29 @@
                 <div class="main-container">
                     <div class="case-slider" data-aos="fade-up">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide case-slider__item"> <a class="case" href="hankook.html">
-                                    <div class="case__img"> <img src="img/case/case-1.webp" alt=""></div>
-                                    <div class="case__name">Мобильное приложение Hankook</div>
-                                    <div class="case__about">Сервис расширенной гарантии Hankook.</div>
-                                </a></div>
-                            <div class="swiper-slide case-slider__item"> <a class="case" href="petztrove.html">
-                                    <div class="case__img"> <img src="img/case/case-2.webp" alt=""></div>
-                                    <div class="case__name">Мобильное приложение PetzTrove</div>
-                                    <div class="case__about">Сервис расширенной гарантии Hankook.</div>
-                                </a></div>
                             <div class="swiper-slide case-slider__item"> <a class="case" href="ami.html">
                                     <div class="case__img"> <img src="img/case/case-3.webp" alt=""></div>
                                     <div class="case__name">Интернет-магазин AMIHOME </div>
-                                    <div class="case__about">Сервис расширенной гарантии Hankook.</div>
+                                    <div class="case__about">Разработка и поддержка магазина онлайн.</div>
                                 </a></div>
-                            <div class="swiper-slide case-slider__item"> <a class="case" href="divahome.html">
-                                    <div class="case__img"> <img src="img/case/case-4.webp" alt=""></div>
-                                    <div class="case__name">Интерент-магазин постельного белья</div>
-                                    <div class="case__about">Сервис расширенной гарантии Hankook.</div>
+                            <!-- <div class="swiper-slide case-slider__item"> <a class="case" href="askona.html">
+                                <div class="case__img"> <img src="img/case/case-8.webp" alt=""></div>
+                                <div class="case__name">Редизайн и техническая поддержка
+                                    сайта АСКОНА</div>
+                                <div class="case__about">Техническая поддержка и уникальные доработки сайта.</div>
+                            </a></div> -->
+                            <div class="swiper-slide case-slider__item"> <a class="case" href="ssavto.html">
+                                    <div class="case__img"> <img src="img/case/case-9.webp" alt=""></div>
+                                    <div class="case__name">Разработка интернет-магазина
+                                        автозапчастей</div>
+                                    <div class="case__about">Сайт с огромными каталогами новых и б/у запчастей.</div>
+                                </a></div>
+                            <div class="swiper-slide case-slider__item"> <a class="case" href="myspot.html">
+                                    <div class="case__img"> <img src="img/case/case-11.png" alt="my-spot.html"></div>
+                                    <div class="case__name">Разработка сервиса посуточной
+                                        аренды квартир MySpot</div>
+                                    <div class="case__about">Мультиязычный и мультивалютный сайт поиска квартир и
+                                        катеджей в аренду.</div>
                                 </a></div>
                         </div>
                     </div>
@@ -592,7 +598,7 @@
                         </div>
                         <div class="letter__text">, или по электронной почте</div>
                         <div class="letter__form">
-                            <input class="letter__form-input is-error" type="text" placeholder="your@email.ru">
+                            <input class=" letter__form-input" type="text" placeholder="your@email.ru">
                         </div>
                         <div class="letter__text">. Меня интересует </div>
                         <div class="letter__form-textarea-cont">
@@ -646,14 +652,14 @@
                             <ul class="footer-nav">
                                 <li class="footer-nav__item"><a class="footer-nav__link" href="about-company.html">О
                                         компании </a></li>
-                                <li class="footer-nav__item"><a class="footer-nav__link" href="#">Блог </a></li>
-                                <li class="footer-nav__item"><a class="footer-nav__link" href="#">Партнеры</a></li>
+                                <li class="footer-nav__item"><a class="footer-nav__link" href="blog.html">Блог </a></li>
+
                                 <li class="footer-nav__item"><a class="footer-nav__link" href="cases.html">Кейсы</a>
                                 </li>
                                 <li class="footer-nav__item"><a class="footer-nav__link" href="reviews.html">Отзывы</a>
                                 </li>
                                 <li class="footer-nav__item"><a class="footer-nav__link"
-                                        href="img/documents/LLC-Laikit.docx">Реквизиты </a>(<a
+                                        href="img/documents/LLC-Laikit.docx">Реквизиты </a> (<a
                                         class="footer-nav__link-download"
                                         href="img/documents/LLC-Laikit.docx">Скачать</a>)</li>
                             </ul>
@@ -679,7 +685,7 @@
                             <div class="contacts footer__contacts"><a class="contacts__phone"
                                     href="tel:+375293220020">+375
                                     (29) 322-00-20</a><a class="contacts__mail" href="mailto:">info@likeit.by</a>
-                                <div class="contacts__address"> <span>Минск, ул. Казинца 11а </span><span>Барановичи,
+                                <div class="contacts__address"> <span>Минск, ул. Казинца 11а <br>Барановичи,
                                         </br>
                                         ул. Куйбышева,111 офис 211</span></div>
                             </div>
