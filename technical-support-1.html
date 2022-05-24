@@ -213,51 +213,53 @@
                                 </div>
                             </div>
                             <div class="main-container-sm">
-                                <h3 class="title-lg">Оставить заявку</h3>
-                                <p class="sub-title-lg">Заполнити форму обратной связи и мы вышлев вам коммерческое
-                                    предложение</p>
-                                <div class="letter">
-                                    <div class="letter__text">Привет, меня зовут</div>
-                                    <div class="letter__form">
-                                        <input class="letter__form-input" type="text" placeholder="имя и фамилия">
+                                <form action="#" class="form-letter">
+                                    <h3 class="title-lg">Оставить заявку</h3>
+                                    <p class="sub-title-lg">Заполнити форму обратной связи и мы вышлев вам коммерческое
+                                        предложение</p>
+                                    <div class="letter">
+                                        <div class="letter__text">Привет, меня зовут</div>
+                                        <div class="letter__form">
+                                            <input class="letter__form-input _text" type="text" name="name" placeholder="имя и фамилия" data-required>
+                                        </div>
+                                        <div class="letter__text">. Я из компании</div>
+                                        <div class="letter__form">
+                                            <input class="letter__form-input _text" name="company" type="text" placeholder="название компании" data-required>
+                                        </div>
+                                        <div class="letter__text">Вы можете связаться со мной по телефону</div>
+                                        <div class="letter__form">
+                                            <input class="letter__form-input _phone" name="phone" type="text" placeholder="ххх ххх хх хх" data-required>
+                                        </div>
+                                        <div class="letter__text">, или по электронной почте</div>
+                                        <div class="letter__form">
+                                            <input class=" letter__form-input _email" name="email" type="text" placeholder="your@email.ru" data-required>
+                                        </div>
+                                        <div class="letter__text">. Меня интересует </div>
+                                        <div class="letter__form-textarea-cont">
+                                            <textarea class="letter__form-textarea _textarea" name="message" cols="30" rows="1"
+                                                placeholder=" краткое описание проекта"  data-required></textarea>
+                                        </div>
                                     </div>
-                                    <div class="letter__text">. Я из компании</div>
-                                    <div class="letter__form">
-                                        <input class="letter__form-input" type="text" placeholder="название компании">
+                                    <div class="file">
+                                        <input class="file__input" type="file" id="file-2">
+                                        <label class="file__label" name="file" for="file-2">Прикрепить файл с информацией о проекте
+                                            <svg class="icon icon--clip">
+                                                <use href="img/sprite.svg#clip"></use>
+                                            </svg>
+                                        </label>
                                     </div>
-                                    <div class="letter__text">Вы можете связаться со мной по телефону</div>
-                                    <div class="letter__form">
-                                        <input class="letter__form-input" type="text" placeholder="ххх ххх хх хх">
+                                    <div class="letter-bottom"> <a class="btn btn-primary send-form" id="mail" href="#">Отправить
+                                            <svg class="icon icon--arrow-right">
+                                                <use href="img/sprite.svg#arrow-right"></use>
+                                            </svg></a>
+                                        <div class="checkbox">
+                                            <!--.is-error-->
+                                            <input class="checkbox__input" type="checkbox" id="checkbox-1" checked  data-required>
+                                            <label class="checkbox__label" for="checkbox-1">Согласие на обработку
+                                                персональных данных</label>
+                                        </div>
                                     </div>
-                                    <div class="letter__text">, или по электронной почте</div>
-                                    <div class="letter__form">
-                                        <input class=" letter__form-input" type="text" placeholder="your@email.ru">
-                                    </div>
-                                    <div class="letter__text">. Меня интересует </div>
-                                    <div class="letter__form-textarea-cont">
-                                        <textarea class="letter__form-textarea" cols="30" rows="1"
-                                            placeholder=" краткое описание проекта"></textarea>
-                                    </div>
-                                </div>
-                                <div class="file">
-                                    <input class="file__input" type="file" id="file-1">
-                                    <label class="file__label" for="file-1">Прикрепить файл с информацией о проекте
-                                        <svg class="icon icon--clip">
-                                            <use href="img/sprite.svg#clip"></use>
-                                        </svg>
-                                    </label>
-                                </div>
-                                <div class="letter-bottom"> <a class="btn btn-primary" id="mail" href="#">Отправить
-                                        <svg class="icon icon--arrow-right">
-                                            <use href="img/sprite.svg#arrow-right"></use>
-                                        </svg></a>
-                                    <div class="checkbox">
-                                        <!--.is-error-->
-                                        <input class="checkbox__input" type="checkbox" id="checkbox-1">
-                                        <label class="checkbox__label" for="checkbox-1">Согласие на обработку
-                                            персональных данных</label>
-                                    </div>
-                                </div>
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -281,7 +283,7 @@
                         <li data-aos="fade-up" class="aos-init aos-animate"> восстановление корректной работы сайта
                             после сбоев
                         </li>
-                        <li data-aos="fade-up" class="aos-init">
+                        <li data-aos="fade-up" class="aos-init">modal
                             лечение от вируса
                         </li>
                         <li data-aos="fade-up" class="aos-init"> перенос сайта на новый хостинг</li>
@@ -312,38 +314,40 @@
                                 </div>
                             </div>
                             <div class="main-container-sm">
-                                <h3 class="title-lg">Получить тарифные планы</h3>
-                                <p class="sub-title-lg">Заполнити форму обратной связи и мы вышлев вам коммерческое
-                                    предложение</p>
-                                <div class="letter">
-                                    <div class="letter__text">Привет, меня зовут</div>
-                                    <div class="letter__form">
-                                        <input class="letter__form-input" type="text" onkeyup="checkParams()" id="name" placeholder="имя и фамилия">
+                                <form action="#"  class="form-letter">
+                                    <h3 class="title-lg">Получить тарифные планы</h3>
+                                    <p class="sub-title-lg">Заполнити форму обратной связи и мы вышлев вам коммерческое
+                                        предложение</p>
+                                    <div class="letter">
+                                        <div class="letter__text">Привет, меня зовут</div>
+                                        <div class="letter__form">
+                                            <input class="letter__form-input" type="text" onkeyup="checkParams()" id="name" placeholder="имя и фамилия" data-required>
+                                        </div>
+                                        <div class="letter__text">. Я из компании</div>
+                                        <div class="letter__form">
+                                            <input class="letter__form-input" type="text" placeholder="название компании" data-required>
+                                        </div>
+                                        <div class="letter__text">Вы можете связаться со мной по телефону</div>
+                                        <div class="letter__form">
+                                            <input class="letter__form-input" onkeyup="checkParams()" type="text" id="phone" placeholder="ххх ххх хх хх" data-required>
+                                        </div>
+                                        <div class="letter__text">, или по электронной почте</div>
+                                        <div class="letter__form">
+                                            <input class=" letter__form-input" type="text" id="email" onkeyup="checkParams()" placeholder="your@email.ru" data-required>
+                                        </div>
                                     </div>
-                                    <div class="letter__text">. Я из компании</div>
-                                    <div class="letter__form">
-                                        <input class="letter__form-input" type="text" placeholder="название компании">
+                                    <div class="letter-bottom" ><a class="btn btn-primary send-form" id="mailto" disabled="true" href="img/documents/Тарифы 2022-3- ТП.pdf" download >Получить тарифы
+                                        <svg class="icon icon--arrow-right">
+                                            <use href="img/sprite.svg#arrow-right"></use>
+                                        </svg></a>
+                                        <div class="checkbox">
+                                            <!--.is-error-->
+                                            <input class="checkbox__input" type="checkbox" id="checkbox-2" checked data-required>
+                                            <label class="checkbox__label" for="checkbox-2">Согласие на обработку
+                                                персональных данных</label>
+                                        </div>
                                     </div>
-                                    <div class="letter__text">Вы можете связаться со мной по телефону</div>
-                                    <div class="letter__form">
-                                        <input class="letter__form-input" onkeyup="checkParams()" type="text" id="phone" placeholder="ххх ххх хх хх">
-                                    </div>
-                                    <div class="letter__text">, или по электронной почте</div>
-                                    <div class="letter__form">
-                                        <input class=" letter__form-input" type="text" id="email" onkeyup="checkParams()" placeholder="your@email.ru">
-                                    </div>
-                                </div>
-                                <div class="letter-bottom" ><a class="btn btn-primary" id="mailto" disabled="true" href="img/documents/Тарифы 2022-3- ТП.pdf" download >Получить тарифы
-                                    <svg class="icon icon--arrow-right">
-                                        <use href="img/sprite.svg#arrow-right"></use>
-                                    </svg></a>
-                                    <div class="checkbox">
-                                        <!--.is-error-->
-                                        <input class="checkbox__input" type="checkbox" id="checkbox-2">
-                                        <label class="checkbox__label" for="checkbox-2">Согласие на обработку
-                                            персональных данных</label>
-                                    </div>
-                                </div>
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -410,48 +414,56 @@
                 </div>
             </div>
             <div class="main-container-sm">
-                <div class="letter">
-                    <div class="letter__text">Привет, меня зовут</div>
-                    <div class="letter__form">
-                        <input class="letter__form-input" type="text" placeholder="имя и фамилия">
+                <form action="#" class="form-letter" id="">
+                    <div class="letter"> 
+                        <div class="letter__text">Привет, меня зовут</div>
+                        <div class="letter__form letter__form-name">
+                            <input class="letter__form-input _text" name="name" type="text" data-required placeholder="имя и фамилия">
+                        </div>
+                        <div class="letter__text">
+                            <span class="hide-dot-mobile">.</span>
+                            Я из компании</div>
+                        <div class="letter__form letter__form-company">
+                            <input class="letter__form-input _text" name="company" type="text" data-required placeholder="название компании">
+                        </div>
+                        <div class="letter__text">Вы можете связаться со мной по телефону</div>
+                        <div class="letter__form letter__form-phone">
+                            <input class="letter__form-input _phone" name="phone" type="text" data-required placeholder="ххх ххх хх хх">
+                        </div>
+                        <div class="letter__text">
+                            <span class="hide-dot-mobile">,</span> 
+                            или по электронной почте</div>
+                        <div class="letter__form letter__form-mail">
+                            <input class=" letter__form-input _email" name="email" type="text" data-required id="email" placeholder="your@email.ru">
+                        </div>
+                        <div class="letter__text">
+                            <span class="hide-dot-mobile">.</span> 
+                            Меня интересует </div>
+                        <div class="letter__form-textarea-cont">
+                            <textarea class="letter__form-textarea _textarea" name="message" cols="30" rows="1"
+                                placeholder=" краткое описание проекта" data-required></textarea>
+                        </div>
                     </div>
-                    <div class="letter__text">. Я из компании</div>
-                    <div class="letter__form">
-                        <input class="letter__form-input" type="text" placeholder="название компании">
+                    <div class="file">
+                        <input class="file__input" name="file" type="file" id="file-1">
+                        <label class="file__label" for="file-1">Прикрепить файл с информацией о проекте
+                            <svg class="icon icon--clip">
+                                <use href="img/sprite.svg#clip"></use>
+                            </svg>
+                        </label>
                     </div>
-                    <div class="letter__text">Вы можете связаться со мной по телефону</div>
-                    <div class="letter__form">
-                        <input class="letter__form-input" type="text" placeholder="ххх ххх хх хх">
+                    <div class="letter-bottom"> <a class="btn btn-primary send-form" id="mail" href="#">Отправить
+                            <svg class="icon icon--arrow-right">
+                                <use href="img/sprite.svg#arrow-right"></use>
+                            </svg></a>
+                        <div class="checkbox">
+                            <!--.is-error-->
+                            <input class="checkbox__input" type="checkbox" id="checkbox-3" data-required  checked>
+                            <label class="checkbox__label" for="checkbox-3">Согласие на обработку персональных
+                                данных</label>
+                        </div>
                     </div>
-                    <div class="letter__text">, или по электронной почте</div>
-                    <div class="letter__form">
-                        <input class=" letter__form-input" type="text" id="email" placeholder="your@email.ru">
-                    </div>
-                    <div class="letter__text">. Меня интересует </div>
-                    <div class="letter__form-textarea-cont">
-                        <textarea class="letter__form-textarea" cols="30" rows="1"
-                            placeholder=" краткое описание проекта"></textarea>
-                    </div>
-                </div>
-                <div class="file">
-                    <input class="file__input" type="file" id="file-1">
-                    <label class="file__label" for="file-1">Прикрепить файл с информацией о проекте
-                        <svg class="icon icon--clip">
-                            <use href="img/sprite.svg#clip"></use>
-                        </svg>
-                    </label>
-                </div>
-                <div class="letter-bottom"> <a class="btn btn-primary" id="mail" href="#">Отправить
-                        <svg class="icon icon--arrow-right">
-                            <use href="img/sprite.svg#arrow-right"></use>
-                        </svg></a>
-                    <div class="checkbox">
-                        <!--.is-error-->
-                        <input class="checkbox__input" type="checkbox" id="checkbox-1">
-                        <label class="checkbox__label" for="checkbox-1">Согласие на обработку персональных
-                            данных</label>
-                    </div>
-                </div>
+                </form>
             </div>
         </div>
         <footer class="footer">
@@ -518,6 +530,7 @@
     <script src="js/countUp.js"></script>
     <script src="js/aos.js"></script>
     <script src="js/app.js"></script>
+    <script src="js/sendForm.js"></script>
 
 </body>
 
